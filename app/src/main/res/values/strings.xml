@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LibarayManagement</string>
+    <string name="spinner_title">Select</string>
 </resources>
