@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.aartilakkad.libaraymanagement.R;
+import com.example.aartilakkad.libaraymanagement.libaray.Activity.Login.HomeActivity;
 import com.example.aartilakkad.libaraymanagement.libaray.Activity.Login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {

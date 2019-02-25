@@ -19,9 +19,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".libaray.Activity.Login.LoginActivity" />
-        <activity android:name=".libaray.Activity.HomeActivity" />
-        <activity android:name=".libaray.Activity.Login.RegistrationActivity"></activity>
-        <activity android:name=".libaray.Activity.Login.FeedbackActivity"></activity>
+        <activity android:name=".libaray.Activity.Login.RegistrationActivity" />
+        <activity android:name=".libaray.Activity.Login.FeedbackActivity" />
+        <activity
+            android:name=".libaray.Activity.Login.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".libaray.Activity.Book.AddBook" />
+        <activity android:name=".libaray.Activity.Book.IssueBookActivity" />
+        <activity android:name=".libaray.Activity.Book.ReturnBookActivity"></activity>
     </application>
 
 </manifest>
