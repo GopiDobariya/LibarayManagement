@@ -69,8 +69,6 @@
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="6dp"
         android:background="@drawable/buttonshap"
         android:text="Submit"
         android:textColor="@android:color/white"
