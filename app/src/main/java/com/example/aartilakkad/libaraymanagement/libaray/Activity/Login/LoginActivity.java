@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.aartilakkad.libaraymanagement.R;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.HomeActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private android.support.v7.app.ActionBar actionBar;
@@ -23,6 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00697f")));
 
         signup=(TextView)findViewById(R.id.signup);
+
+
     }
 
     public void signup(View view) {

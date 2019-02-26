@@ -20,10 +20,8 @@
         </activity>
         <activity android:name=".libaray.Activity.Login.LoginActivity" />
         <activity android:name=".libaray.Activity.HomeActivity" />
-        <activity android:name=".libaray.Activity.Login.RegistrationActivity" />
-        <activity android:name=".libaray.Activity.Login.FeedbackActivity" />
-        <activity android:name=".libaray.Activity.CutomerActivity" />
-        <activity android:name=".libaray.Activity.Login.BookDetailActivity"></activity>
+        <activity android:name=".libaray.Activity.Login.RegistrationActivity"></activity>
+        <activity android:name=".libaray.Activity.Login.FeedbackActivity"></activity>
     </application>
 
 </manifest>
