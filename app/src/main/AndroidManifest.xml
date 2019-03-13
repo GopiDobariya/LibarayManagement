@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".libaray.Activity.Book.InofrmationActivity"></activity>
+        <activity android:name=".libaray.Activity.Book.BookInformationActivity" />
         <activity
             android:name=".libaray.Activity.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -20,8 +22,8 @@
         </activity>
         <activity android:name=".libaray.Activity.Login.LoginActivity" />
         <activity android:name=".libaray.Activity.Login.HomeActivity" />
-        <activity android:name=".libaray.Activity.Login.RegistrationActivity"></activity>
-        <activity android:name=".libaray.Activity.Login.FeedbackActivity"></activity>
+        <activity android:name=".libaray.Activity.Login.RegistrationActivity" />
+        <activity android:name=".libaray.Activity.Login.FeedbackActivity" />
     </application>
 
 </manifest>
