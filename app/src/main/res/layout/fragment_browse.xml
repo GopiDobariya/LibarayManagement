@@ -14,18 +14,19 @@
        <android.support.design.widget.TabItem
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:icon="@drawable/ic_menu_camera"
-           android:text="By Type" />
+           android:icon="@drawable/type"
+           android:text="Learning Resource" />
        <android.support.design.widget.TabItem
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:icon="@drawable/ic_menu_camera"
+           android:icon="@drawable/sorce"
            android:text="By Source"/>
        <android.support.design.widget.TabItem
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:icon="@drawable/ic_menu_camera"
-           android:text="By Subject"/>
+           android:icon="@drawable/subject"
+           android:text="By Subject"
+           />
    </android.support.design.widget.TabLayout>
 
 

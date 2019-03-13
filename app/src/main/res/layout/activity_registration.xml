@@ -144,7 +144,7 @@
         android:layout_below="@+id/login_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/registration"/>
 
 
 </RelativeLayout>
