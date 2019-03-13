@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00697f"
-    android:orientation="vertical"
-    android:scrollbarAlwaysDrawVerticalTrack="true">
+    android:orientation="vertical">
+    <!--android:scrollbarAlwaysDrawVerticalTrack="true"-->
 
     <TextView
         android:id="@+id/login_title"
@@ -108,7 +108,7 @@
         android:layout_below="@+id/login_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/user"/>
 
 
 </RelativeLayout>

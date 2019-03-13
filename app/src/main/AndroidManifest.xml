@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".libaray.Activity.Login.LoginActivity" />
-        <activity android:name=".libaray.Activity.HomeActivity" />
+        <activity android:name=".libaray.Activity.Login.HomeActivity" />
         <activity android:name=".libaray.Activity.Login.RegistrationActivity"></activity>
         <activity android:name=".libaray.Activity.Login.FeedbackActivity"></activity>
     </application>

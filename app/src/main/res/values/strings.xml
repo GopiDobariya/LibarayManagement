@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">LibarayManagement</string>
+    <string name="spinner_title">Education</string>
+    <string name="nav_header_desc">Libreary Management System</string>
+    <string name="nav_header_title">Library Management SYstem</string>
+    <string name="nav_header_subtitle">gopiddobariya7864@gmail.com</string>
+    <string name="action_settings">Setting</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
