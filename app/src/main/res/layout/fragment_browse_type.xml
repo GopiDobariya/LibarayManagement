@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="20dp"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="0dp"
     android:layout_marginRight="20dp"
     android:layout_marginBottom="20dp"
     tools:context=".libaray.Activity.Login.BrowseTypeFragment">
@@ -37,13 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="44dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bgimg" />
+                    android:src="@drawable/book" />
 
 
             </LinearLayout>
@@ -51,7 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hello"
+                android:text="Book"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:textSize="20dp" />
@@ -72,7 +73,7 @@
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bgimg" />
+                    android:src="@drawable/questionpaper" />
 
 
             </LinearLayout>
@@ -80,7 +81,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hello"
+                android:text="Question Paper"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:textSize="20dp" />
@@ -101,7 +102,7 @@
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bgimg" />
+                    android:src="@drawable/article" />
 
 
             </LinearLayout>
@@ -109,7 +110,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hello"
+                android:text="Article"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:textSize="20dp" />
@@ -130,7 +131,7 @@
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bgimg" />
+                    android:src="@drawable/thesis" />
 
 
             </LinearLayout>
@@ -138,7 +139,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hello"
+                android:text="Thesis"
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:textSize="20dp" />

@@ -25,8 +25,7 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fillViewport="true"
-            >
+            android:fillViewport="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,7 +38,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -47,7 +47,7 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/computer" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -61,9 +61,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
+                        android:layout_marginTop="105dp"
                         android:text="Science"
-                        android:textSize="15dp" />
+                        android:textSize="15dp"
+                        />
 
 
                 </android.support.v7.widget.CardView>
@@ -74,7 +75,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -82,23 +84,17 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
+                        android:src="@drawable/psychology" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
+                        android:text="psychology"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"/>
+
+
 
 
                 </android.support.v7.widget.CardView>
@@ -109,7 +105,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -117,23 +114,18 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
+                        android:src="@drawable/technology" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
+                        android:text="Technology"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"/>
+
+
 
 
                 </android.support.v7.widget.CardView>
@@ -144,7 +136,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -152,23 +145,17 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/history" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="100dp"
-                        android:text="Science"
+                        android:text="History"
                         android:textSize="15dp" />
+
+
 
 
                 </android.support.v7.widget.CardView>
@@ -201,7 +188,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -209,56 +197,17 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/book"
+                        android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="25dp"
                         android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
+                        android:text="Book"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"/>
 
 
                 </android.support.v7.widget.CardView>
@@ -269,6 +218,45 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/questionpaper"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="95dp"
+                        android:text="Question"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="110dp"
+                        android:text="Paper"
+                        android:textSize="15dp"
+                        />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="127dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="20dp"
                     app:cardElevation="20dp">
 
                     <ImageView
@@ -277,22 +265,16 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/article" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
+                        android:layout_marginBottom="10dp"
+                        android:text="Article"
                         android:textSize="15dp" />
 
 
@@ -304,7 +286,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -312,23 +295,17 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/thesis" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="100dp"
-                        android:text="Science"
+                        android:text="Thesis"
                         android:textSize="15dp" />
+
+
 
 
                 </android.support.v7.widget.CardView>
@@ -345,6 +322,7 @@
             android:textSize="20dp" />
 
         <HorizontalScrollView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fillViewport="true">
@@ -360,7 +338,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
 
                     <ImageView
                         android:layout_width="70dp"
@@ -368,23 +347,85 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/gate"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="90dp"
+                        android:text="Gate"
+                        android:textSize="15dp" />
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/spoken" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="90dp"
-                        android:text="computer"
+                        android:text="Spoken"
                         android:textSize="15dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
+                        android:layout_marginTop="110dp"
+                        android:text="Tutorial"
                         android:textSize="15dp" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/jee"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="100dp"
+                        android:text="Jee"
+                        android:textSize="15dp" />
+
+
 
 
                 </android.support.v7.widget.CardView>
@@ -403,93 +444,16 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
+                        android:src="@drawable/neet" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="100dp"
-                        android:text="Science"
+                        android:text="Neet"
                         android:textSize="15dp" />
 
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
-
-
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:src="@drawable/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="90dp"
-                        android:text="computer"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="100dp"
-                        android:text="Science"
-                        android:textSize="15dp" />
 
 
                 </android.support.v7.widget.CardView>
