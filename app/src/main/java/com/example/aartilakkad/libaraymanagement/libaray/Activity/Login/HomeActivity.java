@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_LogIn) {
 
         } else if (id == R.id.nav_Browes) {
-                fragmentClass=BrowseFragment.class;
+                //fragmentClass=BrowseFragment.class;
 
         } else if (id == R.id.nav_Search) {
 

@@ -135,6 +135,7 @@
                 </Spinner>
             </android.support.design.widget.TextInputLayout>
             <Button
+                android:id="@+id/signup"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"

@@ -42,11 +42,12 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/Mobile"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email_black_24dp"
                     android:singleLine="true"
-                    android:hint="User Name"
+                    android:hint="Mobile"
                     android:inputType="textEmailAddress" />
             </android.support.design.widget.TextInputLayout>
 
@@ -55,6 +56,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:id="@+id/Password"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -87,6 +89,7 @@
 
 
             <Button
+                android:id="@+id/signin"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"

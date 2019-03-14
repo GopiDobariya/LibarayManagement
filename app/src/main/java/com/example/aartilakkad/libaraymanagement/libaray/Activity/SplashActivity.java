@@ -11,7 +11,7 @@ import com.example.aartilakkad.libaraymanagement.libaray.Activity.Login.HomeActi
 import com.example.aartilakkad.libaraymanagement.libaray.Activity.Login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
-    private static int splash=2000;
+    private static int splash=1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

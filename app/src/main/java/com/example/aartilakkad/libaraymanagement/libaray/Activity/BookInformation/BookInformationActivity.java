@@ -1,4 +1,4 @@
-package com.example.aartilakkad.libaraymanagement.libaray.Activity.Book;
+package com.example.aartilakkad.libaraymanagement.libaray.Activity.BookInformation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

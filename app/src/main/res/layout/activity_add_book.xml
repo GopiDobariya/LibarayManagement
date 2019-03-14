@@ -48,6 +48,7 @@
                     android:textSize="17dp"/>
 
                 <EditText
+                    android:id="@+id/Book_name"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -62,6 +63,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/Author_name"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -70,11 +72,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginLeft="10dp"
-                    android:text="Title"
+                    android:text="Branch"
                     android:textColor="#000"
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/Branch"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -88,6 +91,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/Sourceid"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -101,6 +105,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/Publishdate"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -114,6 +119,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/Description"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"

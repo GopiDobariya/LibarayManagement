@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/linear">
+    android:id="@+id/linear"
+    android:background="@color/buttonlogin">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="117dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="70dp">
+        app:cardCornerRadius="25dp"
+        app:cardElevation="70dp"
+        android:layout_marginTop="15dp">
 
         <TextView
             android:layout_width="wrap_content"
