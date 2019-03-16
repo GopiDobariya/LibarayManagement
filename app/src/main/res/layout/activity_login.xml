@@ -42,12 +42,12 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/Mobile"
+                    android:id="@+id/EdEmail"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email_black_24dp"
                     android:singleLine="true"
-                    android:hint="Mobile"
+                    android:hint="Email"
                     android:inputType="textEmailAddress" />
             </android.support.design.widget.TextInputLayout>
 
@@ -56,18 +56,18 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/Password"
+                    android:id="@+id/EdPassword"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:singleLine="true"
+                    android:inputType="numberPassword"
                     android:drawableLeft="@drawable/ic_enhanced_encryption_black_24dp"
-
                     android:hint="Password"
-                    android:inputType="numberPassword" />
+                    />
             </android.support.design.widget.TextInputLayout>
             <TextView
-                android:id="@+id/signup"
+                android:id="@+id/Txtsignup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -75,7 +75,6 @@
                 android:paddingTop="5dp"
                 android:textColor="#d67601"
                 android:text="Sign UP?"
-                android:onClick="signup"
                 android:textSize="15dp"/>
 
             <TextView
@@ -97,6 +96,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@drawable/buttonshap"
                 android:text="Sign In"
+                android:onClick="signin"
                 android:textColor="@android:color/white"
                 android:textSize="20dp" />
         </LinearLayout>

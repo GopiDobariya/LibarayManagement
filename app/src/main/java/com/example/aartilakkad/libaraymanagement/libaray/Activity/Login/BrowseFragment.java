@@ -38,8 +38,9 @@ public class BrowseFragment extends Fragment {
         final TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab_layout);
         final ViewPager viewPager = (ViewPager) v.findViewById(R.id.viewpager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getFragmentManager());
-        adapter.addFragment(new BrowseTypeFragment(), "One");
-        adapter.addFragment(new browse_featured_Fragment(), "Two");
+        adapter.addFragment(new BrowseTypeFragment(), "type");
+        adapter.addFragment(new browse_featured_Fragment(), "featured");
+        adapter.addFragment(new browse_subject_Fragment(), "subject");
 
         viewPager.setAdapter(adapter);
 
@@ -54,6 +55,7 @@ public class BrowseFragment extends Fragment {
         ViewPagerAdapter  adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new BrowseTypeFragment(), "PHOTOS");
         adapter.addFragment(new browse_featured_Fragment(), "HI-FIVES");
+        adapter.addFragment(new browse_subject_Fragment(), "subject");
         viewPager.setAdapter(adapter);
     }
 

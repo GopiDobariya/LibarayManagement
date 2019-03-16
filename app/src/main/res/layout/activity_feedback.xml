@@ -10,19 +10,19 @@
         android:id="@+id/login_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-       android:layout_marginRight="200dp"
         android:gravity="center_horizontal"
         android:text="Feadback Form"
         android:textColor="#fff"
         android:textSize="26sp"
         android:textStyle="bold"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="2dp"/>
 
     <TextView
         android:id="@+id/name"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:text="Name"
         android:textColor="#fff"
         android:textSize="20dp"
@@ -75,8 +75,6 @@
         android:text="Submit"
         android:textColor="@android:color/white"
         android:textSize="25dp" />
-
-
     <RelativeLayout
         android:layout_width="398dp"
         android:layout_height="369dp"
