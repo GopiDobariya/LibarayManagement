@@ -106,11 +106,10 @@ public class HomeActivity extends AppCompatActivity
         Fragment fragment = null;
             Class fragmentClass = null;
 
-            if (id == R.id.nav_LogIn) {
-
-        } else if (id == R.id.nav_home) {
+            if (id == R.id.nav_home) {
                 fragmentClass=HomeFragment.class;
-        } else if (id == R.id.nav_Browes) {
+        }
+        else if (id == R.id.nav_Browes) {
                 fragmentClass=BrowseFragment.class;
 
         } else if (id == R.id.nav_Search) {
@@ -120,6 +119,9 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_Pi) {
 
         }
+            else if (id == R.id.nav_LogOut) {
+
+            }
         try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {

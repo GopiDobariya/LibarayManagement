@@ -8,10 +8,7 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/homeicon"
             android:title="Home" />
-        <item
-            android:id="@+id/nav_LogIn"
-            android:icon="@drawable/loginicon"
-            android:title="Log-In" />
+
         <item
             android:id="@+id/nav_Browes"
             android:icon="@drawable/browse"
@@ -29,6 +26,10 @@
             android:id="@+id/nav_Contact"
             android:icon="@drawable/phonecontact"
             android:title="Contact" />
+        <item
+            android:id="@+id/nav_LogOut"
+            android:icon="@drawable/loginicon"
+            android:title="LogOut" />
     </group>
 
 

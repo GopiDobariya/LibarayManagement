@@ -12,7 +12,7 @@
         android:layout_height="117dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="70dp"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
