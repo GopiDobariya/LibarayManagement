@@ -120,6 +120,7 @@ public class HomeActivity extends AppCompatActivity
 
         }
             else if (id == R.id.nav_LogOut) {
+                fragmentClass=LoginActivity.class;
 
             }
         try {

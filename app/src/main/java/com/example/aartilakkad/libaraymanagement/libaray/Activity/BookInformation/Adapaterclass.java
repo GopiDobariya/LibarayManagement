@@ -57,9 +57,9 @@ public class Adapaterclass extends RecyclerView.Adapter<Adapaterclass.ItemViewHo
         public ItemViewHolder(View itemView) {
             super(itemView);
 
-            bookname = itemView.findViewById(R.id.bookname);
-            sourceid = itemView.findViewById(R.id.source);
-            authorname = itemView.findViewById(R.id.author);
+//            bookname = itemView.findViewById(R.id.bookname);
+//            sourceid = itemView.findViewById(R.id.source);
+//            authorname = itemView.findViewById(R.id.author);
             layout = itemView.findViewById(R.id.linear);
         }
     }

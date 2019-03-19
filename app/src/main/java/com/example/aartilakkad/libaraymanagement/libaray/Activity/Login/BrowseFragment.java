@@ -33,31 +33,19 @@ public class BrowseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_browse,container,false);
-
+        View v = inflater.inflate(R.layout.fragment_browse, container, false);
         final TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab_layout);
         final ViewPager viewPager = (ViewPager) v.findViewById(R.id.viewpager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getFragmentManager());
         adapter.addFragment(new BrowseTypeFragment(), "type");
-        adapter.addFragment(new browse_featured_Fragment(), "featured");
-        adapter.addFragment(new browse_subject_Fragment(), "subject");
-
-        viewPager.setAdapter(adapter);
-
         tabLayout.setupWithViewPager(viewPager);
-
 
         return v;
 
 
     }
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter  adapter = new ViewPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new BrowseTypeFragment(), "PHOTOS");
-        adapter.addFragment(new browse_featured_Fragment(), "HI-FIVES");
-        adapter.addFragment(new browse_subject_Fragment(), "subject");
-        viewPager.setAdapter(adapter);
-    }
+
+
 
     private class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
