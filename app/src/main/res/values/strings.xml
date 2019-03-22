@@ -2,7 +2,7 @@
     <string name="app_name">LibarayManagement</string>
     <string name="spinner_title">Education</string>
     <string name="nav_header_desc">Libreary Management System</string>
-    <string name="nav_header_title">Library Management SYstem</string>
+    <string name="nav_header_title">Library Management System</string>
     <string name="nav_header_subtitle">LMS123@gmail.com</string>
     <string name="action_settings">Setting</string>
     <string name="navigation_drawer_open">open</string>
@@ -16,5 +16,6 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="title_activity_neet">Neet</string>
 
 </resources>

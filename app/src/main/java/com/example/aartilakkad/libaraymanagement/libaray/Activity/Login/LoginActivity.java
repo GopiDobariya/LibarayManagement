@@ -1,20 +1,15 @@
 package com.example.aartilakkad.libaraymanagement.libaray.Activity.Login;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.aartilakkad.libaraymanagement.R;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.APIInterface;
 import com.example.aartilakkad.libaraymanagement.libaray.Activity.ApiClient;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.LoginResponse;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -23,7 +18,6 @@ import ProjectServices.ProjectServices;
 import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
-import retrofit2.Call;
 
 public class LoginActivity extends AppCompatActivity {
     private android.support.v7.app.ActionBar actionBar;

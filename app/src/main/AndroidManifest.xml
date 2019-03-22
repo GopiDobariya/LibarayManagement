@@ -11,23 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HistoryBook" android:label="History Book">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Jee"
+            android:label="JeeBook"></activity>
+        <activity android:name=".Thesis"
+            android:label="ThesisBook"/>
+        <activity android:name=".Gate"
+            android:label="GateBook"/>
+        <activity android:name=".Artical"
+            android:label="ArticalBook"/>
+        <activity
+            android:name=".Neet"
+            android:label="@string/title_activity_neet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Technology" />
+        <activity
+            android:name=".ComputerScience"
+            android:label="Computer Science" />
+        <activity
+            android:name=".HistoryBook"
+            android:label="History Book" />
+        <activity
+            android:name=".libaray.Activity.Book.IssueBookActivity"
+            android:label="Issue Book" />
         <activity android:name=".libaray.Activity.Book.InofrmationActivity" />
-        <activity android:name=".libaray.Activity.BookInformation.BookInformationActivity" />
         <activity
             android:name=".libaray.Activity.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".libaray.Activity.Login.LoginActivity" />
+        <activity android:name=".libaray.Activity.Login.HomeActivity">
 
         </activity>
-        <activity android:name=".libaray.Activity.Login.LoginActivity"></activity>
-        <activity android:name=".libaray.Activity.Login.HomeActivity"></activity>
-        <activity android:name=".libaray.Activity.Login.RegistrationActivity"></activity>
+        <activity android:name=".libaray.Activity.Login.RegistrationActivity" />
         <activity android:name=".libaray.Activity.Login.FeedbackActivity" />
     </application>
 

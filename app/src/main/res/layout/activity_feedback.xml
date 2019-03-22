@@ -7,7 +7,7 @@
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <TextView
-        android:id="@+id/login_title"
+        android:id="@+id/feedback_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -19,15 +19,20 @@
         android:layout_marginLeft="2dp"/>
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/TxEmail"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Name"
+        android:text="Email"
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginLeft="8dp"/>
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp" />
 
     <TextView
         android:id="@+id/rating"
@@ -48,10 +53,7 @@
         android:numStars="5"
         android:stepSize="0.2" />
 
-    <EditText
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp" />
+
 
     <TextView
         android:id="@+id/comments"
@@ -63,7 +65,17 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginLeft="8dp"/>
-
+    <EditText
+        android:id="@+id/Comment"
+        android:layout_width="398dp"
+        android:layout_height="369dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="126dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginLeft="6dp"/>
     <Button
         android:id="@+id/submit"
         android:layout_width="318dp"
@@ -75,18 +87,9 @@
         android:text="Submit"
         android:textColor="@android:color/white"
         android:textSize="25dp" />
-    <RelativeLayout
-        android:layout_width="398dp"
-        android:layout_height="369dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="126dp"
-        android:background="#fff"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        android:padding="20dp"
-        android:layout_marginLeft="6dp">
 
-    </RelativeLayout>
+
+
 
 
 

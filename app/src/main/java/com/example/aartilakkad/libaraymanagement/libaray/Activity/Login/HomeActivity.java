@@ -1,8 +1,6 @@
 package com.example.aartilakkad.libaraymanagement.libaray.Activity.Login;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,9 +16,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.aartilakkad.libaraymanagement.Artical;
+import com.example.aartilakkad.libaraymanagement.ComputerScience;
+import com.example.aartilakkad.libaraymanagement.Gate;
+import com.example.aartilakkad.libaraymanagement.HistoryBook;
+import com.example.aartilakkad.libaraymanagement.Jee;
+import com.example.aartilakkad.libaraymanagement.Neet;
 import com.example.aartilakkad.libaraymanagement.R;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.SplashActivity;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.search.SearchFragment;
+import com.example.aartilakkad.libaraymanagement.Technology;
+import com.example.aartilakkad.libaraymanagement.Thesis;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,10 +35,8 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,53 +87,49 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
-
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Fragment fragment = null;
-            Class fragmentClass = null;
-
             if (id == R.id.nav_home) {
-                fragmentClass=HomeFragment.class;
         }
-        else if (id == R.id.nav_Browes) {
-                fragmentClass=BrowseFragment.class;
+        else if (id == R.id.nav_Computer) {
+                startActivity(new Intent(getApplicationContext(), ComputerScience.class));
+        } else if (id == R.id.nav_History) {
+                startActivity(new Intent(getApplicationContext(), HistoryBook.class));
 
-        } else if (id == R.id.nav_Search) {
-                    fragmentClass= SearchFragment.class;
+        }else if (id == R.id.nav_Neet) {
+                startActivity(new Intent(getApplicationContext(), Neet.class));
+
+        }else if (id == R.id.nav_Get) {
+                startActivity(new Intent(getApplicationContext(), Gate.class));
+
+        } else if (id == R.id.nav_Jee) {
+
+                startActivity(new Intent(getApplicationContext(), Jee.class));
+        }else if (id == R.id.nav_Technology) {
+                startActivity(new Intent(getApplicationContext(), Technology.class));
+
+        }else if (id == R.id.nav_Thesis) {
+                startActivity(new Intent(getApplicationContext(), Thesis.class));
+
+        }else if (id == R.id.nav_Artical) {
+                startActivity(new Intent(getApplicationContext(), Artical.class));
+        }else if (id == R.id.nav_Question_Paper) {
+
+
+        }else if (id == R.id.nav_Search) {
+
         } else if (id == R.id.nav_Contact) {
 
         } else if (id == R.id.nav_Pi) {
 
         }
-            else if (id == R.id.nav_LogOut) {
-                fragmentClass=LoginActivity.class;
-
+        else if (id == R.id.nav_LogOut) {
             }
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        FragmentManager fragmentManager;
-        fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

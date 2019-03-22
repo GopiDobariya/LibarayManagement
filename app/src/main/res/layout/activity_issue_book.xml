@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/buttonlogin"
-    tools:context=".libaray.Activity.Book.AddBook">
+    tools:context=".libaray.Activity.Book.IssueBookActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,6 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -48,6 +50,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/edUSer"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -62,25 +65,12 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/edBookname"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
+                    android:editable="false"
                     android:singleLine="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Source Id"
-                    android:textColor="#000"
-                    android:textSize="17dp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:inputType="text"
-                    android:singleLine="true" />
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -91,6 +81,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/edIssueDate"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -105,6 +96,7 @@
                     android:textSize="17dp" />
 
                 <EditText
+                    android:id="@+id/edReturn"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:inputType="text"
@@ -112,13 +104,14 @@
 
 
                 <Button
+                    android:id="@+id/BtnInsert"
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="25dp"
                     android:background="@drawable/buttonshap"
-                    android:text="Sign In"
+                    android:text="Issue Book"
                     android:textColor="@android:color/white"
                     android:textSize="20dp" />
 

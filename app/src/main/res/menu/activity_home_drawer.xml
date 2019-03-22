@@ -8,11 +8,47 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/homeicon"
             android:title="Home" />
+        
 
         <item
-            android:id="@+id/nav_Browes"
-            android:icon="@drawable/browse"
-            android:title="Browse" />
+            android:id="@+id/nav_Computer"
+            android:icon="@drawable/computer"
+            android:title="Computer Science" />
+        <item
+            android:id="@+id/nav_Technology"
+            android:icon="@drawable/technologybook"
+            android:title="Technology" />
+        <item
+            android:id="@+id/nav_History"
+            android:icon="@drawable/document"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_Get"
+            android:icon="@drawable/bookgate"
+            android:title="Gate" />
+        <item
+            android:id="@+id/nav_Jee"
+            android:icon="@drawable/bookgate"
+            android:title="Jee" />
+        <item
+            android:id="@+id/nav_Neet"
+            android:icon="@drawable/neet"
+            android:title="Neet" />
+
+
+        <item
+            android:id="@+id/nav_Thesis"
+            android:icon="@drawable/thesisbook"
+            android:title="Thesis" />
+        <item
+            android:id="@+id/nav_Artical"
+            android:icon="@drawable/articlebook"
+            android:title="Artical" />
+        <item
+            android:id="@+id/nav_Question_Paper"
+            android:icon="@drawable/questions"
+            android:title="Question Paper" />
+
         <item
             android:id="@+id/nav_Search"
             android:icon="@drawable/search"

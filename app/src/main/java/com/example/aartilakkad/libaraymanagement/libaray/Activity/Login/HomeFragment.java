@@ -17,10 +17,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.aartilakkad.libaraymanagement.Artical;
+import com.example.aartilakkad.libaraymanagement.ComputerScience;
+import com.example.aartilakkad.libaraymanagement.Gate;
+import com.example.aartilakkad.libaraymanagement.HistoryBook;
+import com.example.aartilakkad.libaraymanagement.Jee;
+import com.example.aartilakkad.libaraymanagement.Neet;
 import com.example.aartilakkad.libaraymanagement.R;
-import com.example.aartilakkad.libaraymanagement.libaray.Activity.BookInformation.BookInformationActivity;
+import com.example.aartilakkad.libaraymanagement.Technology;
+import com.example.aartilakkad.libaraymanagement.Thesis;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import ModelClass.ModelSubjectDomain;
@@ -57,7 +65,7 @@ FragmentTransaction transaction;
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         list = new ArrayList<>();
         list.add(new ModelSubjectDomain(R.drawable.computer,"Computer Science"));
-        list.add(new ModelSubjectDomain(R.drawable.psychology,"Psychology"));
+        //list.add(new ModelSubjectDomain(R.drawable.psychology,"Psychology"));
         list.add(new ModelSubjectDomain(R.drawable.technology,"Technology"));
         list.add(new ModelSubjectDomain(R.drawable.history,"History"));
         recyclerDomain = (RecyclerView)v.findViewById(R.id.recyclerDomain);
@@ -69,7 +77,7 @@ FragmentTransaction transaction;
 
 
         list = new ArrayList<>();
-        list.add(new ModelSubjectDomain(R.drawable.book,"Book"));
+        //list.add(new ModelSubjectDomain(R.drawable.book,"Book"));
         list.add(new ModelSubjectDomain(R.drawable.questionpaper,"Question Paper"));
         list.add(new ModelSubjectDomain(R.drawable.article,"Artical"));
         list.add(new ModelSubjectDomain(R.drawable.thesis,"Thesis"));
@@ -81,7 +89,7 @@ FragmentTransaction transaction;
 
         list = new ArrayList<>();
         list.add(new ModelSubjectDomain(R.drawable.gate,"Gate"));
-        list.add(new ModelSubjectDomain(R.drawable.spoken,"Spoken Tutorial"));
+        //list.add(new ModelSubjectDomain(R.drawable.spoken,"Spoken Tutorial"));
         list.add(new ModelSubjectDomain(R.drawable.jee,"Jee"));
         list.add(new ModelSubjectDomain(R.drawable.neet,"Neet"));
         recyclerFeatured = (RecyclerView)v.findViewById(R.id.recyclerSource);
@@ -97,19 +105,46 @@ FragmentTransaction transaction;
         private List<ModelSubjectDomain> mDataset;
         private Context mContext;
 
-        public  class ViewHolder extends RecyclerView.ViewHolder {
+        List<ModelSubjectDomain> data= Collections.emptyList();
+
+
+        public  class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             TextView txtDomain;
             ImageView imgDomain;
             public ViewHolder(View itemView) {
                 super(itemView);
                 txtDomain = itemView.findViewById(R.id.txtDomain);
                 imgDomain = itemView.findViewById(R.id.imgDomain);
+
+                itemView.setClickable(true);
+                itemView.setOnClickListener((View.OnClickListener) this);
+            }
+
+            @Override
+            public void onClick(View v) {
+                if(getPosition()==0) {
+                    Intent i = new Intent(getContext(), ComputerScience.class);
+                    startActivity(i);
+                }
+                else if(getPosition()==1)
+                {
+                    Intent i = new Intent(getContext(), Technology.class);
+                    startActivity(i);
+                }
+                if(getPosition()==2)
+                {
+                    Intent i = new Intent(getContext(), HistoryBook.class);
+                    startActivity(i);
+                }
+
+                Toast.makeText(mContext,"The Item Clicked is: "+getPosition(),Toast.LENGTH_SHORT).show();
             }
         }
 
         public AdapterSubDomain(List<ModelSubjectDomain> myDataset, Context context) {
             mDataset = myDataset;
             mContext = context;
+            this.data= data;
         }
 
         @Override
@@ -125,17 +160,9 @@ FragmentTransaction transaction;
 
         @Override
         public void onBindViewHolder(AdapterSubDomain.ViewHolder holder, int position) {
+
             holder.txtDomain.setText(mDataset.get(position).getName());
             holder.imgDomain.setImageResource(mDataset.get(position).getImg());
-            holder.imgDomain.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(mContext, "hi", Toast.LENGTH_SHORT).show();
-                    Intent i=new Intent(getContext(), BookInformationActivity.class);
-                    startActivity(i);
-
-                }
-            });
         }
 
         @Override
@@ -148,10 +175,12 @@ FragmentTransaction transaction;
     {
         private List<ModelSubjectDomain> mDataset;
         private Context mContext;
+        List<ModelSubjectDomain> data= Collections.emptyList();
 
         public AdapterLearningResource(List<ModelSubjectDomain> mDataset, Context mContext) {
             this.mDataset = mDataset;
             this.mContext = mContext;
+            this.data= data;
         }
 
         @NonNull
@@ -168,6 +197,7 @@ FragmentTransaction transaction;
         public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             holder.txtDomain.setText(mDataset.get(position).getName());
             holder.imgDomain.setImageResource(mDataset.get(position).getImg());
+
         }
 
         @Override
@@ -175,13 +205,36 @@ FragmentTransaction transaction;
             return mDataset.size();
         }
 
-        public  class ViewHolder extends RecyclerView.ViewHolder {
+        public  class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
             TextView txtDomain;
             ImageView imgDomain;
             public ViewHolder(View itemView) {
                 super(itemView);
                 txtDomain = itemView.findViewById(R.id.txtDomain);
                 imgDomain = itemView.findViewById(R.id.imgDomain);
+                itemView.setClickable(true);
+                itemView.setOnClickListener((View.OnClickListener) this);
+            }
+
+            @Override
+            public void onClick(View v) {
+                if(getPosition()==0)
+                {
+                   // Intent i = new Intent(getContext(), QuestionPaper.class);
+                    //startActivity(i);
+                }
+                else if(getPosition()==1)
+                {
+                    Intent i = new Intent(getContext(), Artical.class);
+                    startActivity(i);
+                }
+                if(getPosition()==2)
+                {
+                    Intent i = new Intent(getContext(), Thesis.class);
+                    startActivity(i);
+                }
+
+                Toast.makeText(mContext,"The Item Clicked is: "+getPosition(),Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -195,10 +248,12 @@ FragmentTransaction transaction;
     {
         private List<ModelSubjectDomain> mDataset;
         private Context mContext;
+        List<ModelSubjectDomain> data= Collections.emptyList();
 
         public AdapterLearningFeatured(List<ModelSubjectDomain> mDataset, Context mContext) {
             this.mDataset = mDataset;
             this.mContext = mContext;
+            this.data= data;
         }
 
 
@@ -223,13 +278,37 @@ FragmentTransaction transaction;
             return mDataset.size();
         }
 
-        public class ViewHolder extends RecyclerView.ViewHolder {
+        public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
             TextView txtDomain;
             ImageView imgDomain;
             public ViewHolder(View itemView) {
                 super(itemView);
                 txtDomain = itemView.findViewById(R.id.txtDomain);
                 imgDomain = itemView.findViewById(R.id.imgDomain);
+
+                itemView.setClickable(true);
+                itemView.setOnClickListener((View.OnClickListener) this);
+            }
+
+            @Override
+            public void onClick(View v) {
+                if(getPosition()==0)
+                {
+                    Intent i = new Intent(getContext(), Gate.class);
+                    startActivity(i);
+                }
+                else if(getPosition()==1)
+                {
+                    Intent i = new Intent(getContext(), Jee.class);
+                    startActivity(i);
+                }
+                if(getPosition()==2)
+                {
+                    Intent i = new Intent(getContext(), Neet.class);
+                    startActivity(i);
+                }
+
+                Toast.makeText(mContext,"The Item Clicked is: "+getPosition(),Toast.LENGTH_SHORT).show();
             }
         }
     }
